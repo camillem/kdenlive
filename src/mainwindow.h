@@ -36,10 +36,10 @@
 #include <KXmlGuiWindow>
 #include <kautosavefile.h>
 #include <utility>
+#include <mlt++/Mlt.h>
 
 #include "bin/bin.h"
 #include "definitions.h"
-#include "dvdwizard/dvdwizard.h"
 #include "gentime.h"
 #include "kdenlive_debug.h"
 #include "kdenlivecore_export.h"
@@ -429,7 +429,6 @@ private slots:
     void slotGetNewKeyboardStuff(QComboBox *schemesList);
     void slotAutoTransition();
     void slotRunWizard();
-    void slotDvdWizard(const QString &url = QString());
     void slotGroupClips();
     void slotUnGroupClips();
     void slotEditItemDuration();
